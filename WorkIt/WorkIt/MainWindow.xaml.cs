@@ -76,7 +76,8 @@ namespace WorkIt
 
         public void ShowCustomers(System.Data.DataTable customers)
         {
-            throw new NotImplementedException();
+            Data d = new Data(customers);
+            d.ShowDialog();
         }
     }
 }
