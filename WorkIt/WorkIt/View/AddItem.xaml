@@ -1,14 +1,13 @@
-﻿<Window x:Class="WorkIt.View.NewOrder"
+﻿<Window x:Class="WorkIt.View.AddItem"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkIt.View"
         mc:Ignorable="d"
-        Title="NewOrder" Height="150" Width="300">
+        Title="AddItem" Height="150" Width="200">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
@@ -19,31 +18,24 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0"
                    Grid.Column="0"
-                   Text="מספר הזמנה:" />
-        <TextBox Name="txtbx_OrderID"
+                   Text="מספר פריט:" />
+        <TextBox Name="txtbx_ItemCode"
                  Grid.Row="0"
                  Grid.Column="1"  />
         <TextBlock Grid.Row="1"
                    Grid.Column="0"
-                   Text="ספק:" />
-        <TextBox Name="txtbx_Suppplier"
+                   Text="כמות:" />
+        <TextBox Name="txtbx_Amount"
                  Grid.Row="1"
                  Grid.Column="1" />
-        <TextBlock Grid.Row="2"
-                   Grid.Column="0"
-                   Text="תאריך יעד:" />
-        <TextBox Name="txtbx_Destination"
-                 Grid.Row="2"
-                 Grid.Column="1" />
-        
         <Button Name="btn_okProperties"
-                Grid.Row="5"
+                Grid.Row="2"
                 Grid.Column="0"
                 Click="btn_ok_Click"
-                Content="הוסף פריטים" />
+                Content="הוסף פריט" Height="23" VerticalAlignment="Top" />
         <Button Name="btn_cancel"
-                Grid.Row="5"
+                Grid.Row="2"
                 Grid.Column="1"
-                Content="סיום" Click="btn_cancel_Click" />
+                Content="סיום" Click="btn_cancel_Click" Height="23" VerticalAlignment="Top" />
     </Grid>
 </Window>
