@@ -1,0 +1,62 @@
+﻿<Window x:Class="WorkIt.View.EditClass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkIt.View"
+        mc:Ignorable="d"
+        Title="EditClass" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+           </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="שם החוג:" />
+        <TextBox Name="txtbx_Name"
+                 Grid.Row="0"
+                 Grid.Column="1"  />
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Text="ימי פעילות:" />
+        <TextBox Name="txtbx_days"
+                 Grid.Row="1"
+                 Grid.Column="1" />
+        <TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Text="שעות:" />
+        <TextBox Name="txtbx_H"
+                 Grid.Row="2"
+                 Grid.Column="1" />
+        <TextBlock Grid.Row="3"
+                   Grid.Column="0"
+                   Text="תז מדריך:" />
+        <TextBox Name="txtbx_em"
+                 Grid.Row="3"
+                 Grid.Column="1" />
+        <TextBlock Grid.Row="4"
+                   Grid.Column="0"
+                   Text="מספר חדר:" />
+        <TextBox Name="txtbx_numroom"
+                 Grid.Row="4"
+                 Grid.Column="1" />
+        <Button Name="btn_okProperties"
+                Grid.Row="5"
+                Grid.Column="0"
+                Click="btn_ok_Click"
+                Content="Ok" />
+        <Button Name="btn_cancel"
+                Grid.Row="5"
+                Grid.Column="1"
+                Content="Cancel" Click="btn_cancel_Click" />
+    </Grid>
+</Window>
