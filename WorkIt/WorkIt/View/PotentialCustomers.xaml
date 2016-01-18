@@ -8,7 +8,7 @@
         Title="PotentialCustomers" Height="400" Width="400">
     <Grid Background="Cornsilk" >
         <Button x:Name="button" Content="יצירת אירוע" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" Width="270" Height="34" Background="#FFD47979"/>
-        <Button x:Name="button1" Content="שליחת אירוע" HorizontalAlignment="Left" Margin="55,53,0,0" VerticalAlignment="Top" Width="270" Height="34" Background="#FFD47979"/>
+        <Button x:Name="button1" Content="שליחת אירוע" HorizontalAlignment="Left" Margin="55,53,0,0" VerticalAlignment="Top" Width="270" Height="34" Background="#FFD47979" Click="button1_Click"/>
         <Button x:Name="button2" Content="עדכון לוח אירועים" HorizontalAlignment="Left" Margin="55,94,0,0" VerticalAlignment="Top" Width="270" Height="34" Background="#FFD47979"/>
         <Image x:Name="image" Source="gym-and-fitness3.jpg" HorizontalAlignment="Left" Height="108" Margin="10,242,0,0" VerticalAlignment="Top" Width="372"/>
         <Button x:Name="button3" Content="הפקת דוח לקוחות שקיבלו עדכונים" HorizontalAlignment="Left" Margin="55,174,0,0" VerticalAlignment="Top" Width="270" Background="#FFD47979" Height="34"/>

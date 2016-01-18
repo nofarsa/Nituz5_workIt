@@ -57,7 +57,7 @@ namespace WorkIt.View
                         MessageBox.Show("The Item does not exist in the system");
                         return;
                     }
-                    param.Add("ItemCode", txtbx_ItemCode.Text);
+                   
                 }
                 if (txtbx_Amount.Text != "") {
                     int i = 0;
@@ -66,8 +66,11 @@ namespace WorkIt.View
                         MessageBox.Show("Please enter a valid number");
                         return;
                     }
-                    param.Add("Amount", txtbx_Amount.Text);
+                   
                 }
+                param.Add(txtbx_ItemCode.Text, txtbx_Amount.Text);
+                txtbx_Amount.Text = "";
+                txtbx_ItemCode.Text = "";
 
             }
                 

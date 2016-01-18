@@ -20,11 +20,14 @@ namespace WorkIt.View
     /// </summary>
     public partial class Data : Window
     {
-        public Data(DataTable dt)
+        public Data(DataTable dt,string msg)
         {
             InitializeComponent();
             dg_results.ItemsSource = dt.DefaultView;
+            t1.Text = msg;
            
         }
+
+
     }
 }

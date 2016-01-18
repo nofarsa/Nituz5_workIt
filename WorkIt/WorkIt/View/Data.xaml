@@ -4,7 +4,8 @@
         Title="Data" Height="300" Width="300">
     <Grid>
         <DataGrid Name="dg_results"
-                  Margin="3"
+                  Margin="3,50,3,3"
                   DockPanel.Dock="Bottom" />
+        <TextBox Name="t1" HorizontalAlignment="Left" Height="45" Margin="3,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279" />
     </Grid>
 </Window>

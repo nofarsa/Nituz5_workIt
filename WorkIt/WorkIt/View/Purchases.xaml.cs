@@ -19,14 +19,17 @@ namespace WorkIt.View
     /// </summary>
     public partial class Purchases : Window
     {
-        public Purchases()
+        public Controller m_controller;
+        public Purchases(Controller c)
         {
             InitializeComponent();
+            m_controller = c;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            NewOrder no = new NewOrder(m_controller);
+            no.ShowDialog();
         }
     }
 }

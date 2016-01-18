@@ -10,6 +10,6 @@ namespace WorkIt
     public interface IView
     {
         void ShowMessage(string msg);
-        void ShowCustomers(DataTable customers);
+        void ShowCustomers(DataTable customers,string msg);
     }
 }

@@ -41,12 +41,12 @@ namespace WorkIt.View
                 paramitem = new Dictionary<string, string>();
                 if (txtbx_OrderID.Text != "")
                 { 
-                    if (m_controller.checkValue("OrderID", txtbx_OrderID.Text))
+                    if (!m_controller.checkValue("Order_ID", txtbx_OrderID.Text))
                        {
-                    MessageBox.Show("The Order ID already exists in the System. Please choose different Order ID");
-                    return;
-                        }
-                    param["OrderID"] = txtbx_OrderID.Text;
+                        MessageBox.Show("The Order ID already exists in the System. Please choose different Order ID");
+                        return;
+                       }
+                    param["Order_ID"] = txtbx_OrderID.Text;
                 }
                 if (txtbx_Suppplier.Text != "") {
                     if (m_controller.checkValue("Suppliers", txtbx_Suppplier.Text))
@@ -59,6 +59,10 @@ namespace WorkIt.View
                         }
                 if (txtbx_Destination.Text != "")
                     param["Destination"] = txtbx_Destination.Text;
+                if (param.Count != 3) { 
+                    MessageBox.Show("Please enter all order fields");
+                    return;
+                }
                 AddItem at = new AddItem(m_controller);
                 at.ShowDialog();
                 paramitem = at.GetDic();
