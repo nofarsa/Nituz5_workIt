@@ -20,11 +20,12 @@ namespace WorkIt.View
     public partial class AddItem : Window
     {
         public Dictionary<string, string> param;
-        
+        public Controller m_controller;
 
-        public AddItem()
+        public AddItem(Controller controller)
         {
             InitializeComponent();
+            m_controller = controller;
             param = new Dictionary<string, string>();
         }
 
@@ -50,12 +51,25 @@ namespace WorkIt.View
                 {
                     Cancel = false;
                     
-                if (txtbx_ItemCode.Text != "")
+                if (txtbx_ItemCode.Text != "") {
+                    if (m_controller.checkValue("Items", txtbx_ItemCode.Text))
+                    {
+                        MessageBox.Show("The Item does not exist in the system");
+                        return;
+                    }
                     param.Add("ItemCode", txtbx_ItemCode.Text);
-                if (txtbx_Amount.Text != "")
-                    param.Add("Amount", txtbx_Amount.Text);
-                
                 }
+                if (txtbx_Amount.Text != "") {
+                    int i = 0;
+                    if (!int.TryParse(txtbx_Amount.Text, out i))
+                    {
+                        MessageBox.Show("Please enter a valid number");
+                        return;
+                    }
+                    param.Add("Amount", txtbx_Amount.Text);
+                }
+
+            }
                 
             
         }

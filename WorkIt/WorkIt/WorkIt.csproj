@@ -69,6 +69,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\DB_helper.cs" />
+    <Compile Include="View\AddItem.xaml.cs">
+      <DependentUpon>AddItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Classes.xaml.cs" />
     <Compile Include="View\Customers.xaml.cs" />
     <Compile Include="View\EditClass.xaml.cs" />
@@ -76,6 +79,9 @@
     <Compile Include="View\NewOrder.xaml.cs" />
     <Compile Include="View\PotentialCustomers.xaml.cs" />
     <Compile Include="View\Purchases.xaml.cs" />
+    <Compile Include="View\SendEvent.xaml.cs">
+      <DependentUpon>SendEvent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Stock.xaml.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +97,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AddItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Classes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,6 +128,10 @@
     <Page Include="View\Purchases.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SendEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Stock.xaml">
       <Generator>MSBuild:Compile</Generator>

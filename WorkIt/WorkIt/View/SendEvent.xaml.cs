@@ -35,6 +35,11 @@ namespace WorkIt.View
         {
             if (txtbx_EventName.Text != "")
             {
+                if (m_controller.checkValue("Events", txtbx_EventName.Text))
+                {
+                    MessageBox.Show("The Event does not exist in the system");
+                    return;
+                }
                 m_controller.SendEvent(txtbx_EventName.Text);
             }
             this.Close();

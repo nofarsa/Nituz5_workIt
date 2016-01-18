@@ -62,6 +62,8 @@ namespace WorkIt
                 query = "select count(*) from master..Classes where Name='" + value + "'";
             else if (class_Name == "Suppliers")
                 query = "select count(*) from master..Suppliers where Name='" + value + "'";
+            else if (class_Name == "Order_ID")
+                query = "select count(*) from master..Oreders where Order_ID=" + value + "";
             else if (class_Name == "Items")
                 query = "select count(*) from master..Items where Item_Code=" + value + "";
             else if (class_Name == "Events")
