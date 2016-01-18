@@ -34,8 +34,8 @@ namespace WorkIt.Model
             helper.ExecuteNonQuery(query);
             string query2 = "select C.Name,C.Mail from master..Customers C inner join master..Customres_In_Classes CIC on C.ID=CIC.Customer_ID where CIC.Class_Name='" + className+"'";
             DataTable res = helper.ExecuteDataTable(query2);
-            m_controller.ShowMessage("The Class " + className + " was updated successfuly, Mail was s);
-           m_controller.ShowCustomers(res);
+           // m_controller.ShowMessage("The Class " + className + " was updated successfuly, Mail was s);
+            m_controller.ShowCustomers(res);
 
         }
         
