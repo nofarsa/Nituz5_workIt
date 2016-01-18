@@ -50,37 +50,46 @@ namespace WorkIt.View
         private void btn_ok_Click(object sender, RoutedEventArgs e)
         {
 
-            if (txtbx_days.ToString() != null && txtbx_H.ToString() != null && txtbx_em.ToString() != null && txtbx_numroom.ToString() != null)
-            {
-
                 if (txtbx_Name.Text != "")
                 {
                     Cancel = false;
                     param = new Dictionary<string, string>();
-                    
+                    if (m_controller.checkValue("Classes", txtbx_Name.Text))
+                    {
+                        MessageBox.Show("The Class Name does not exist in the system");
+                        return;
+                    }
                     if (txtbx_days.Text != "")
                         param["Days"] = txtbx_days.Text;
                     if (txtbx_H.Text != "")
                         param["Hours"] = txtbx_H.Text;
                     if (txtbx_em.Text != "")
+                    {
+                        if (m_controller.checkValue("Classes2", txtbx_em.Text))
+                        {
+                            MessageBox.Show("The Guide Name does not exist in the system");
+                            return;
+                        }
                         param["Guide_ID"] = txtbx_em.Text;
+                    }
+
                     if (txtbx_numroom.Text != "")
+                    {
+                        int i=0;
+                        if(!int.TryParse(txtbx_numroom.Text,out i))
+                        {
+                            MessageBox.Show("Please enter a valid number");
+                            return;
+                        }
                         param["Room_num"] = txtbx_numroom.Text;
+                    }
+                        
                     m_controller.UpdateClass(txtbx_Name.Text, param);
-                    MessageBox.Show("Emails were sent to the following customers:");
-                }
-                else
-                {
-                    Cancel = true;
-                    MessageBox.Show("Error: Please enter valide fields");
+                    //MessageBox.Show("Emails were sent to the following customers:");
                 }
 
-            }
-            else
-            {
-                Cancel = true;
-                MessageBox.Show("Error: Error input. Please validate class parameters");
-            }
+            
+            
             this.Close();
 
         }

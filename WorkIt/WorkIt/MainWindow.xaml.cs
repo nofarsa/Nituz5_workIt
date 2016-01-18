@@ -71,7 +71,7 @@ namespace WorkIt
 
         public void ShowMessage(string msg)
         {
-            throw new NotImplementedException();
+            MessageBox.Show(msg);
         }
 
         public void ShowCustomers(System.Data.DataTable customers)

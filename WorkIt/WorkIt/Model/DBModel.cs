@@ -34,8 +34,8 @@ namespace WorkIt.Model
             helper.ExecuteNonQuery(query);
             string query2 = "select C.Name,C.Mail from master..Customers C inner join master..Customres_In_Classes CIC on C.ID=CIC.Customer_ID where CIC.Class_Name='" + className+"'";
             DataTable res = helper.ExecuteDataTable(query2);
-            m_controller.ShowMessage("The Class " + className + " was updated successfuly");
-           // m_controller.ShowCustomers(res);
+            m_controller.ShowMessage("The Class " + className + " was updated successfuly, Mail was s);
+           m_controller.ShowCustomers(res);
 
         }
         
@@ -50,9 +50,9 @@ namespace WorkIt.Model
                 else
                     query += "[" + paramName + "]" + "='" + parameters[paramName] + "',";
             }
-            query = query.Substring(0, query.Length - 1);
+            query += "[Order_Date]=CURDATE(), [IsArrived]=0";
             helper.ExecuteNonQuery(query);
-            m_controller.ShowMessage("The Order was added successfuly");
+            
         }
 
         public void InsertItemsToOrder(Dictionary<string,string> items,string Order_ID)
@@ -63,6 +63,7 @@ namespace WorkIt.Model
                 query = "INSERT INTO master..Items_In_Orders VALUES("+Order_ID+","+item+","+items[item]+")";
                 helper.ExecuteNonQuery(query);
             }
+            m_controller.ShowMessage("The Order was added successfuly");
 
         }
         
@@ -75,6 +76,15 @@ namespace WorkIt.Model
             m_controller.ShowCustomers(res);
         }
         
+
+        public bool checkValue(string query)
+        {
+            int ans = Convert.ToInt32(helper.ExecuteScalar(query));
+            if (ans == 0)
+                return true;
+            else
+                return false;
+        }
 
     }
 }

@@ -26,7 +26,8 @@ namespace WorkIt.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=\"C:\\Users\\nsarafia\\Google Drive\\סמסט" +
-            "ר ה\\ניתוץ\\WorkIt\\WorkIt\\Model\\Database_WorkIt.mdf\";Integrated Security=True")]
+            "ר ה\\ניתוץ\\Nituz5_workIt\\WorkIt\\WorkIt\\Model\\Database_WorkIt.mdf\";Integrated Secu" +
+            "rity=True")]
         public string connectionString {
             get {
                 return ((string)(this["connectionString"]));

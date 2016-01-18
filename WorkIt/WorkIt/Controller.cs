@@ -39,8 +39,8 @@ namespace WorkIt
         //mod
         public void CreateOrder(Dictionary<string, string> parameters, Dictionary<string, string> items) 
         {
-            //m_model.CreateOrder(parameters);
-           // m_model.InsertItemsToOrder(items,parameters["Order_ID"]);
+            m_model.CreateOrder(parameters);
+            m_model.InsertItemsToOrder(items,parameters["Order_ID"]);
         }
 
         //view
@@ -51,9 +51,25 @@ namespace WorkIt
         //mod
         public void SendEvent(string eventName) 
         {
-            //m_model.SendEvent(eventName);
+            m_model.SendEvent(eventName);
         }
 
+        public bool checkValue(string class_Name,string value)
+        {
+
+            string query = "";
+            if (class_Name == "Classes")    
+                query = "select count(*) from master..Classes where Name='" + value + "'";
+            else if (class_Name == "Suppliers")
+                query = "select count(*) from master..Suppliers where Name='" + value + "'";
+            else if (class_Name == "Items")
+                query = "select count(*) from master..Items where Item_Code=" + value + "";
+            else if (class_Name == "Events")
+                query = "select count(*) from master..Events where Name='" + value + "'";
+            else if (class_Name == "Classes2")
+                query = "select count(*) from master..Classes where Guide_ID=" + value + "";
+            return m_model.checkValue(query);
+        }
        
     }
 
