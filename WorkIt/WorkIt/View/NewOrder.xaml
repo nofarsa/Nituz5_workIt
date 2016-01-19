@@ -44,6 +44,6 @@
         <Button Name="btn_cancel"
                 Grid.Row="5"
                 Grid.Column="1"
-                Content="סיום" Click="btn_cancel_Click" />
+                Content="ביטול" Click="btn_cancel_Click" />
     </Grid>
 </Window>

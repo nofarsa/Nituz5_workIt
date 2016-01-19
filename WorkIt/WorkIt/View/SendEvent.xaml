@@ -31,6 +31,6 @@
         <Button Name="btn_cancel"
                 Grid.Row="2"
                 Grid.Column="1"
-                Content="סיום" Click="btn_cancel_Click" Height="39" VerticalAlignment="Top" />
+                Content="ביטול" Click="btn_cancel_Click" Height="39" VerticalAlignment="Top" />
     </Grid>
 </Window>

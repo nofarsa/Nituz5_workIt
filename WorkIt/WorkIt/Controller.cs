@@ -32,9 +32,9 @@ namespace WorkIt
             m_model.UpdateClass(className, parameters);
         }
         //view
-        public void ShowCustomers(DataTable customers) 
+        public void ShowCustomers(DataTable customers,string msg) 
         {
-            m_view.ShowCustomers(customers);
+            m_view.ShowCustomers(customers,msg);
         }
         //mod
         public void CreateOrder(Dictionary<string, string> parameters, Dictionary<string, string> items) 
@@ -61,13 +61,13 @@ namespace WorkIt
             if (class_Name == "Classes")    
                 query = "select count(*) from master..Classes where Name='" + value + "'";
             else if (class_Name == "Suppliers")
-                query = "select count(*) from master..Suppliers where Name='" + value + "'";
+                query = "select count(*) from master..Supppliers where Name='" + value + "'";
             else if (class_Name == "Order_ID")
-                query = "select count(*) from master..Oreders where Order_ID=" + value + "";
+                query = "select count(*) from master..Orders where Order_ID=" + value + "";
             else if (class_Name == "Items")
                 query = "select count(*) from master..Items where Item_Code=" + value + "";
             else if (class_Name == "Events")
-                query = "select count(*) from master..Events where Name='" + value + "'";
+                query = "select count(*) from master..Eventes where Name='" + value + "'";
             else if (class_Name == "Classes2")
                 query = "select count(*) from master..Classes where Guide_ID=" + value + "";
             return m_model.checkValue(query);

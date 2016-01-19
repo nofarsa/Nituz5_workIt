@@ -59,13 +59,13 @@ namespace WorkIt
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
-            Purchases prch = new Purchases();
+            Purchases prch = new Purchases(m_controller);
             prch.ShowDialog();
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            PotentialCustomers pc = new PotentialCustomers();
+            PotentialCustomers pc = new PotentialCustomers(m_controller);
             pc.ShowDialog();
         }
 
@@ -74,9 +74,10 @@ namespace WorkIt
             MessageBox.Show(msg);
         }
 
-        public void ShowCustomers(System.Data.DataTable customers)
+        public void ShowCustomers(System.Data.DataTable customers,string msg)
         {
-            throw new NotImplementedException();
+            Data d = new Data(customers,msg);
+            d.ShowDialog();
         }
     }
 }

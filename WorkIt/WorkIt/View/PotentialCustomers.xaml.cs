@@ -19,9 +19,17 @@ namespace WorkIt.View
     /// </summary>
     public partial class PotentialCustomers : Window
     {
-        public PotentialCustomers()
+        public Controller m_controller;
+        public PotentialCustomers(Controller c)
         {
             InitializeComponent();
+            m_controller = c;
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            SendEvent se = new SendEvent(m_controller);
+            se.ShowDialog();
         }
     }
 }

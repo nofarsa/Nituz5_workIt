@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,21 +16,18 @@ using System.Windows.Shapes;
 namespace WorkIt.View
 {
     /// <summary>
-    /// Interaction logic for Purchases.xaml
+    /// Interaction logic for Data.xaml
     /// </summary>
-    public partial class Purchases : Window
+    public partial class Data : Window
     {
-        public Controller m_controller;
-        public Purchases(Controller c)
+        public Data(DataTable dt,string msg)
         {
             InitializeComponent();
-            m_controller = c;
+            dg_results.ItemsSource = dt.DefaultView;
+            t1.Text = msg;
+           
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            NewOrder no = new NewOrder(m_controller);
-            no.ShowDialog();
-        }
+
     }
 }

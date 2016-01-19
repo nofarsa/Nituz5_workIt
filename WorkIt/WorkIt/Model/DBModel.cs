@@ -34,8 +34,8 @@ namespace WorkIt.Model
             helper.ExecuteNonQuery(query);
             string query2 = "select C.Name,C.Mail from master..Customers C inner join master..Customres_In_Classes CIC on C.ID=CIC.Customer_ID where CIC.Class_Name='" + className+"'";
             DataTable res = helper.ExecuteDataTable(query2);
-           // m_controller.ShowMessage("The Class " + className + " was updated successfuly, Mail was s);
-            m_controller.ShowCustomers(res);
+            //m_controller.ShowMessage();
+            m_controller.ShowCustomers(res, "The Class " + className + " was updated successfuly, Mail was sent to the relevent customers");
 
         }
         
@@ -45,12 +45,12 @@ namespace WorkIt.Model
             string query = "Insert Into master..Orders select";
             foreach (string paramName in parameters.Keys)
             {
-                if (paramName=="ID")
+                if (paramName=="Order_ID")
                     query += "[" + paramName + "]" + "=" + parameters[paramName] + ",";
                 else
                     query += "[" + paramName + "]" + "='" + parameters[paramName] + "',";
             }
-            query += "[Order_Date]=CURDATE(), [IsArrived]=0";
+            query += "[Order_Date]=CONVERT(date, getdate()), [IsArrived]=0";
             helper.ExecuteNonQuery(query);
             
         }
@@ -70,10 +70,10 @@ namespace WorkIt.Model
         
         public void SendEvent(string eventName)
         {
-            string query = "select C.Name,C.Mail from master..Customers C inner join master..Customres_In_Events CIE on C.ID=CIE.Customer_ID where CIE.Name=" + eventName;
+            string query = "select C.Name,C.Mail from master..Customers C inner join master..Customres_In_Eventes CIE on C.ID=CIE.Customer_ID where CIE.Name='" + eventName + "'";
             DataTable res = helper.ExecuteDataTable(query);
-            m_controller.ShowMessage("The Event " + eventName + " was send successfuly to the relvant customers");
-            m_controller.ShowCustomers(res);
+            //m_controller.ShowMessage();
+            m_controller.ShowCustomers(res, "The Event " + eventName + " was send successfuly to the relvant customers");
         }
         
 

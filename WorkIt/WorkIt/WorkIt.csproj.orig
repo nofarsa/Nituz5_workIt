@@ -101,8 +101,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\AddItem.xaml">
+<<<<<<< HEAD
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+=======
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+>>>>>>> 1ce0e7b9207822f5f53c23638b861cb327ead614
     </Page>
     <Page Include="View\Classes.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -113,8 +118,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\Data.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\EditClass.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -137,8 +142,13 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\SendEvent.xaml">
+<<<<<<< HEAD
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+=======
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+>>>>>>> 1ce0e7b9207822f5f53c23638b861cb327ead614
     </Page>
     <Page Include="View\Stock.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -181,7 +191,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database_WorkIt.mdf</DependentUpon>
     </Content>
-    <Resource Include="View\Capture.JPG" />
     <Resource Include="Picture1.jpg" />
     <Resource Include="View\17_BIZ_t400.jpg" />
     <Resource Include="View\21207_desc3_2_2_1355157288.png" />
