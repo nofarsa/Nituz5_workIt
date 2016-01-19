@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Customers" Height="300" Width="300">
     <Grid Background="Cornsilk" >
-        <Button x:Name="button" Content="הוספת לקוח חדש" HorizontalAlignment="Left" Margin="80,5,0,0" VerticalAlignment="Top" Width="121" Background="#FFD47979"/>
-        <Button x:Name="button1" Content="עדכון פרטי לקוח" HorizontalAlignment="Left" Margin="80,30,0,0" VerticalAlignment="Top" Width="121" Background="#FFD47979"/>
-        <Button x:Name="button2" Content="הפקת דוח לקוחות" HorizontalAlignment="Left" Margin="80,57,0,0" VerticalAlignment="Top" Width="121" Background="#FFD47979"/>
-        <Image x:Name="image" Source="gym-and-fitness3.jpg" HorizontalAlignment="Left" Height="88" Margin="10,151,0,0" VerticalAlignment="Top" Width="272"/>
-        <Button x:Name="button3" Content="יצירת תוכנית אימונים " HorizontalAlignment="Left" Margin="80,101,0,0" VerticalAlignment="Top" Width="121" Background="#FFD47979"/>
-        <Button x:Name="button4" Content="עדכון תוכנית אימונים" HorizontalAlignment="Left" Margin="80,126,0,0" VerticalAlignment="Top" Width="121" Background="#FFD47979"/>
+        <Button x:Name="button" Content="הוספת לקוח חדש" HorizontalAlignment="Left" Margin="80,5,0,0" VerticalAlignment="Top" Width="121" Background="CadetBlue"/>
+        <Button x:Name="button1" Content="עדכון פרטי לקוח" HorizontalAlignment="Left" Margin="80,30,0,0" VerticalAlignment="Top" Width="121" Background="CadetBlue"/>
+        <Button x:Name="button2" Content="הפקת דוח לקוחות" HorizontalAlignment="Left" Margin="80,57,0,0" VerticalAlignment="Top" Width="121" Background="CadetBlue"/>
+        <Image x:Name="image" Source="gym-and-fitness3.jpg" HorizontalAlignment="Left" Height="101" Margin="10,168,0,0" VerticalAlignment="Top" Width="272"/>
+        <Button x:Name="button3" Content="יצירת תוכנית אימונים " HorizontalAlignment="Left" Margin="80,101,0,0" VerticalAlignment="Top" Width="121" Background="CadetBlue"/>
+        <Button x:Name="button4" Content="עדכון תוכנית אימונים" HorizontalAlignment="Left" Margin="80,126,0,0" VerticalAlignment="Top" Width="121" Background="CadetBlue"/>
 
     </Grid>
 </Window>

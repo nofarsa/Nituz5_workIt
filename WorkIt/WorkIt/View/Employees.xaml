@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Window1" Height="400" Width="400">
     <Grid Background="Cornsilk" >
-        <Button x:Name="button" Content="הוספת עובד חדש" HorizontalAlignment="Left" Margin="78,2,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="#FFD47979"/>
-        <Button x:Name="button1" Content="עדכון פרטי עובד" HorizontalAlignment="Left" Margin="78,29,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="#FFD47979"/>
-        <Button x:Name="button2" Content="מחיקת עובד" HorizontalAlignment="Left" Margin="78,56,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="#FFD47979"/>
-        <Image x:Name="image" Source="17_BIZ_t400.jpg" HorizontalAlignment="Left" Height="190" Margin="48,169,0,0" VerticalAlignment="Top" Width="306"/>
-        <Button x:Name="button3" Content="יצירת לוח משמרות" HorizontalAlignment="Left" Margin="78,85,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="#FFD47979"/>
-        <Button x:Name="button4" Content="עדכון לוח משמרות" HorizontalAlignment="Left" Margin="78,113,0,0" VerticalAlignment="Top" Width="216" Background="#FFD47979" Height="23"/>
-        <Button x:Name="button5" Content="הפקת לוח עובדים" HorizontalAlignment="Left" Margin="78,141,0,0" VerticalAlignment="Top" Width="216" Background="#FFD47979" Height="23"/>
+        <Button x:Name="button" Content="הוספת עובד חדש" HorizontalAlignment="Left" Margin="78,2,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="CadetBlue"/>
+        <Button x:Name="button1" Content="עדכון פרטי עובד" HorizontalAlignment="Left" Margin="78,29,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="CadetBlue"/>
+        <Button x:Name="button2" Content="מחיקת עובד" HorizontalAlignment="Left" Margin="78,56,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="CadetBlue"/>
+        <Image x:Name="image" Source="17_BIZ_t400.jpg" HorizontalAlignment="Left" Height="179" Margin="60,180,0,0" VerticalAlignment="Top" Width="298"/>
+        <Button x:Name="button3" Content="יצירת לוח משמרות" HorizontalAlignment="Left" Margin="78,85,0,0" VerticalAlignment="Top" Width="216" Height="23" Background="CadetBlue"/>
+        <Button x:Name="button4" Content="עדכון לוח משמרות" HorizontalAlignment="Left" Margin="78,113,0,0" VerticalAlignment="Top" Width="216" Background="CadetBlue" Height="23"/>
+        <Button x:Name="button5" Content="הפקת לוח עובדים" HorizontalAlignment="Left" Margin="78,141,0,0" VerticalAlignment="Top" Width="216" Background="CadetBlue" Height="23"/>
 
     </Grid>
 </Window>

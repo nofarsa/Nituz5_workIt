@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Classes" Height="300" Width="300">
     <Grid Background="Cornsilk" >
-        <Button x:Name="button" Content="הוספת חוג" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Width="103" Background="#FFD47979"/>
-        <Button x:Name="button1" Content="עדכון פרטי חוג" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="111" Background="#FFD47979" Click="button1_Click"/>
-        <Button x:Name="button2" Content="מחיקת חוג" HorizontalAlignment="Left" Margin="179,35,0,0" VerticalAlignment="Top" Width="103" Background="#FFD47979"/>
-        <Image x:Name="image" Source="class-schedule1.png" HorizontalAlignment="Left" Height="166" Margin="10,93,0,0" VerticalAlignment="Top" Width="272"/>
-        <Button x:Name="button3" Content="צפייה בלוח חוגים" HorizontalAlignment="Left" Margin="20,35,0,0" VerticalAlignment="Top" Width="111" Background="#FFD47979"/>
-        <Button x:Name="button4" Content="הפקת דוח חוגים" HorizontalAlignment="Left" Margin="179,60,0,0" VerticalAlignment="Top" Width="103" Background="#FFD47979"/>
-        <Button x:Name="button5" Content="דוח משתתפי חוג" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Width="111" Background="#FFD47979"/>
+        <Button x:Name="button" Content="הוספת חוג" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Width="103" Background="CadetBlue"/>
+        <Button x:Name="button1" Content="עדכון פרטי חוג" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="111" Background="CadetBlue" Click="button1_Click"/>
+        <Button x:Name="button2" Content="מחיקת חוג" HorizontalAlignment="Left" Margin="179,35,0,0" VerticalAlignment="Top" Width="103" Background="CadetBlue"/>
+        <Image x:Name="image" Source="class-schedule1.png" HorizontalAlignment="Left" Height="156" Margin="10,103,0,0" VerticalAlignment="Top" Width="272"/>
+        <Button x:Name="button3" Content="צפייה בלוח חוגים" HorizontalAlignment="Left" Margin="20,35,0,0" VerticalAlignment="Top" Width="111" Background="CadetBlue"/>
+        <Button x:Name="button4" Content="הפקת דוח חוגים" HorizontalAlignment="Left" Margin="179,60,0,0" VerticalAlignment="Top" Width="103" Background="CadetBlue"/>
+        <Button x:Name="button5" Content="דוח משתתפי חוג" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Width="111" Background="CadetBlue"/>
 
     </Grid>
 </Window>

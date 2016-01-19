@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkIt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="552.341" Width="802">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
@@ -13,28 +13,22 @@
                 <MenuItem Header="_Close" />
                 <MenuItem Header="_Save" />
             </MenuItem>
-            <MenuItem Header="Properties">
-                <MenuItem Header="_Open" />
-                <MenuItem Header="_Close" />
-                <MenuItem Header="_Save" />
-            </MenuItem>
+
         </Menu>
         <Border BorderBrush="Blue"
                 BorderThickness="2"
                 CornerRadius="5">
-            <Canvas Name="cnvs_main" Margin="0,-2,0,2">
-                <Button x:Name="button" Background="CadetBlue" Content="עובדים" Canvas.Left="407" Canvas.Top="35" Width="75" Click="btn_employees_Click" Height="31"/>
-                <Button x:Name="button1" Background="CadetBlue" Content="לקוחות" Canvas.Left="308" Canvas.Top="35" Width="75" Height="31" Click="button1_Click" />
-                <Button x:Name="button2" Background="CadetBlue" Content="חוגים" Canvas.Left="308" Canvas.Top="172" Width="174" Height="30" Click="button2_Click"/>
-                <Button x:Name="button3"  Background="CadetBlue" Content="ניהול מלאי" Canvas.Left="407" Canvas.Top="221" Width="75" Height="30" Click="button3_Click" />
-                <Button x:Name="button4" Background="CadetBlue" Content="מציאת לקוחות פוטנציאליים" Canvas.Left="308" Canvas.Top="90" Width="174" Height="30" Click="button4_Click"/>
-                <Button x:Name="button5" Background="CadetBlue" Content="ניהול רכש" Canvas.Left="308" Canvas.Top="221" Width="75" Height="30" Click="button5_Click"/>
-                <Image x:Name="image" Source="Picture1.jpg"  Height="224" Canvas.Top="44" Width="294" RenderTransformOrigin="0.474,0.324">
-                    <Image.Effect>
-                        <DropShadowEffect/>
-                    </Image.Effect>
-                </Image>
+            <Canvas Name="cnvs_main" Margin="0,-2" Width="801" >
+                <Button x:Name="button" Background="Silver"  FontSize="20" Content="עובדים" Canvas.Left="611" Canvas.Top="45" Width="146" Click="btn_employees_Click" Height="73" />
+                <Button x:Name="button1" Background="Silver"  FontSize="20" Content="לקוחות" Canvas.Left="427" Canvas.Top="45" Width="146" Height="73" Click="button1_Click" />
+                <Button x:Name="button2"  Background="CadetBlue" FontSize="20" Content="חוגים" Canvas.Left="427" Canvas.Top="247" Width="330" Height="76" Click="button2_Click"/>
+                <Button x:Name="button3"  Background="Silver" FontSize="20" Content="ניהול מלאי" Canvas.Left="611" Canvas.Top="361" Width="146" Height="72" Click="button3_Click" />
+                <Button x:Name="button4" Background="CadetBlue" FontSize="20" Content="פרסום" Canvas.Left="427" Canvas.Top="147" Width="330" Height="76" Click="button4_Click"/>
+                <Button x:Name="button5"  Background="Silver" FontSize="20" Content="ניהול רכש" Canvas.Left="427" Canvas.Top="361" Width="146" Height="72" Click="button5_Click"/>
 
+                <Canvas.Background>
+                    <ImageBrush ImageSource="C:\Users\azaltzma\Desktop\Capture2.jpg" Stretch="Fill"/>
+                </Canvas.Background>
             </Canvas>
         </Border>
     </DockPanel>
