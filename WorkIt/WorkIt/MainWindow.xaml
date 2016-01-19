@@ -27,7 +27,7 @@
                 <Button x:Name="button5"  Background="Silver" FontSize="20" Content="ניהול רכש" Canvas.Left="427" Canvas.Top="361" Width="146" Height="72" Click="button5_Click"/>
 
                 <Canvas.Background>
-                    <ImageBrush ImageSource="C:\Users\azaltzma\Desktop\Capture2.jpg" Stretch="Fill"/>
+                    <ImageBrush ImageSource="Capture2.jpg" Stretch="Fill"/>
                 </Canvas.Background>
             </Canvas>
         </Border>
